@@ -21,6 +21,7 @@ bool BaseEncoder::Init() {
         LOGE(TAG, "Fail to find encoder, code id is %d", m_codec_id)
         return false;
     }
+
     // 2. 分配编码上下文
     m_codec_ctx = avcodec_alloc_context3(m_codec);
     if (m_codec_ctx == NULL) {

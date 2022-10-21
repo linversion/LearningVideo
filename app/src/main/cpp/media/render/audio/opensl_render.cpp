@@ -19,7 +19,6 @@ void OpenSLRender::InitRender() {
     if (!CreateEngine()) return;
     if (!CreateOutputMixer()) return;
     if (!ConfigPlayer()) return;
-
     // 开启线程，进入播放等待
     std::thread t(sRenderPcm, this);
     t.detach();

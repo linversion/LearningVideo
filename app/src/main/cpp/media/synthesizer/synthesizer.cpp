@@ -77,12 +77,11 @@ void Synthesizer::DecodePause(IDecoder *decoder) {
 
 bool Synthesizer::DecodeOneFrame(IDecoder *decoder, OneFrame *frame) {
     if (decoder == m_video_decoder) {
-        // 等待上一帧画面数据压入编码缓冲队列
+        // 视频数据，将当前帧数据信息保存下来，通知OpenGLRenderer将画面数据发送出来。
+        // 在ReceivePixel()方法中接收到画面数据后，将数据PushFrame到视频编码器
         while (m_cur_v_frame) {
             av_usleep(2000);
         }
-        // 视频数据，将当前帧数据信息保存下来，通知OpenGLRenderer将画面数据发送出来。
-        // 在ReceivePixel()方法中接收到画面数据后，将数据PushFrame到视频编码器
         m_cur_v_frame = frame;
         m_gl_render->RequestRgbaData();
         return m_v_encoder->TooMuchData();
