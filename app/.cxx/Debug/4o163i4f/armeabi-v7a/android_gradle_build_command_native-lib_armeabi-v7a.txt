@@ -1,7 +1,0 @@
-Executable : /Users/linversion/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
-arguments : 
--C
-/Users/linversion/Documents/android-project/LearningVideo-master/app/.cxx/Debug/4o163i4f/armeabi-v7a
-native-lib
-jvmArgs : 
-
