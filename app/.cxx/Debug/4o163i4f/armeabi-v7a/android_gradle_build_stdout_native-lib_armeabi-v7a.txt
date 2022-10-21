@@ -1,0 +1,106 @@
+ninja: Entering directory `/Users/linversion/Documents/android-project/LearningVideo-master/app/.cxx/Debug/4o163i4f/armeabi-v7a'
+[1/15] Building CXX object CMakeFiles/native-lib.dir/media/player/def_player/player.cpp.o
+In file included from /Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/player/def_player/player.cpp:9:
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/player/def_player/../../../opengl/drawer/proxy/def_drawer_proxy_impl.h:19:10: warning: 'AddDrawer' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+    void AddDrawer(Drawer *drawer);
+         ^
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/player/def_player/../../render/video/opengl_render/../../../../opengl/drawer/proxy/drawer_proxy.h:13:18: note: overridden virtual function is here
+    virtual void AddDrawer(Drawer *drawer) = 0;
+                 ^
+1 warning generated.
+[2/15] Building CXX object CMakeFiles/native-lib.dir/media/decoder/audio/a_decoder.cpp.o
+[3/15] Building CXX object CMakeFiles/native-lib.dir/media/player/gl_player/gl_player.cpp.o
+In file included from /Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/player/gl_player/gl_player.cpp:10:
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/player/gl_player/../../../opengl/drawer/proxy/def_drawer_proxy_impl.h:19:10: warning: 'AddDrawer' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+    void AddDrawer(Drawer *drawer);
+         ^
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/player/gl_player/../../render/video/opengl_render/../../../../opengl/drawer/proxy/drawer_proxy.h:13:18: note: overridden virtual function is here
+    virtual void AddDrawer(Drawer *drawer) = 0;
+                 ^
+1 warning generated.
+[4/15] Building CXX object CMakeFiles/native-lib.dir/native-lib.cpp.o
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/native-lib.cpp:30:27: warning: 'av_codec_next' is deprecated [-Wdeprecated-declarations]
+        AVCodec *c_temp = av_codec_next(NULL);
+                          ^
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/ffmpeg/include/libavcodec/avcodec.h:4117:1: note: 'av_codec_next' has been explicitly marked deprecated here
+attribute_deprecated
+^
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/ffmpeg/include/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+1 warning generated.
+[5/15] Building CXX object CMakeFiles/native-lib.dir/media/encoder/video/v_encoder.cpp.o
+[6/15] Building CXX object CMakeFiles/native-lib.dir/opengl/egl/egl_core.cpp.o
+[7/15] Building CXX object CMakeFiles/native-lib.dir/opengl/egl/egl_surface.cpp.o
+[8/15] Building CXX object CMakeFiles/native-lib.dir/media/muxer/ff_repack.cpp.o
+In file included from /Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/muxer/ff_repack.cpp:6:
+In file included from /Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/muxer/ff_repack.h:11:
+In file included from /Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/ffmpeg/include/libavformat/avformat.h:317:
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/ffmpeg/include/libavcodec/avcodec.h:1454:16: warning: 'convergence_duration' is deprecated [-Wdeprecated-declarations]
+typedef struct AVPacket {
+               ^
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/muxer/ff_repack.cpp:104:15: note: in implicit copy constructor for 'AVPacket' first required here
+        Write(pkt);
+              ^
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/ffmpeg/include/libavcodec/avcodec.h:1505:5: note: 'convergence_duration' has been explicitly marked deprecated here
+    attribute_deprecated
+    ^
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/ffmpeg/include/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+1 warning generated.
+[9/15] Building CXX object CMakeFiles/native-lib.dir/opengl/drawer/video_drawer.cpp.o
+[10/15] Building CXX object CMakeFiles/native-lib.dir/media/encoder/base_encoder.cpp.o
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/encoder/base_encoder.cpp:71:64: warning: format specifies type 'int' but the argument has type 'AVCodec *' [-Wformat]
+        LOG_ERROR(TAG, LogSpec(), "Fail to open encoder : %d", m_codec);
+                                                          ~~   ^~~~~~~
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/encoder/../../utils/logger.h:19:75: note: expanded from macro 'LOG_ERROR'
+    #define LOG_ERROR(TAG, SPEC, FMT, ...) LOGE(TAG, "[%s] " FMT, SPEC, ##__VA_ARGS__)
+                                                             ~~~          ^~~~~~~~~~~
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/encoder/../../utils/logger.h:16:86: note: expanded from macro 'LOGE'
+    #define LOGE(TAG, FORMAT,...) __android_log_print(ANDROID_LOG_ERROR,TAG,FORMAT,##__VA_ARGS__);
+                                                                            ~~~~~~   ^~~~~~~~~~~
+In file included from /Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/encoder/base_encoder.cpp:6:
+In file included from /Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/encoder/base_encoder.h:10:
+In file included from /Users/linversion/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/thread:90:
+In file included from /Users/linversion/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/functional:504:
+/Users/linversion/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/memory:2338:5: warning: delete called on 'BaseEncoder' that is abstract but has non-virtual destructor [-Wdelete-abstract-non-virtual-dtor]
+    delete __ptr;
+    ^
+/Users/linversion/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/memory:2593:7: note: in instantiation of member function 'std::__ndk1::default_delete<BaseEncoder>::operator()' requested here
+      __ptr_.second()(__tmp);
+      ^
+/Users/linversion/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/memory:2547:19: note: in instantiation of member function 'std::__ndk1::unique_ptr<BaseEncoder, std::__ndk1::default_delete<BaseEncoder> >::reset' requested here
+  ~unique_ptr() { reset(); }
+                  ^
+/Users/linversion/Library/Android/sdk/ndk/21.4.7075529/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/memory:3938:21: note: in instantiation of member function 'std::__ndk1::unique_ptr<BaseEncoder, std::__ndk1::default_delete<BaseEncoder> >::~unique_ptr' requested here
+    unique_ptr<_Yp> __hold(__p);
+                    ^
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/encoder/base_encoder.cpp:40:34: note: in instantiation of function template specialization 'std::__ndk1::shared_ptr<BaseEncoder>::shared_ptr<BaseEncoder>' requested here
+    std::shared_ptr<BaseEncoder> that(this);
+                                 ^
+2 warnings generated.
+[11/15] Building CXX object CMakeFiles/native-lib.dir/media/encoder/audio/a_encoder.cpp.o
+[12/15] Building CXX object CMakeFiles/native-lib.dir/media/render/video/opengl_render/opengl_render.cpp.o
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/render/video/opengl_render/opengl_render.cpp:121:17: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+                realloc(rgb, size);
+                ^~~~~~~ ~~~~~~~~~
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/render/video/opengl_render/opengl_render.cpp:122:55: warning: format specifies type 'int' but the argument has type 'uint8_t *' (aka 'unsigned char *') [-Wformat]
+                LOGE(TAG, "内存分配失败： %d", rgb)
+                                          ~~   ^~~
+                                          %s
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/render/video/opengl_render/../../../../opengl/egl/../../utils/logger.h:16:86: note: expanded from macro 'LOGE'
+    #define LOGE(TAG, FORMAT,...) __android_log_print(ANDROID_LOG_ERROR,TAG,FORMAT,##__VA_ARGS__);
+                                                                            ~~~~~~   ^~~~~~~~~~~
+2 warnings generated.
+[13/15] Building CXX object CMakeFiles/native-lib.dir/media/synthesizer/synthesizer.cpp.o
+In file included from /Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/synthesizer/synthesizer.cpp:8:
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/synthesizer/../../opengl/drawer/proxy/def_drawer_proxy_impl.h:19:10: warning: 'AddDrawer' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+    void AddDrawer(Drawer *drawer);
+         ^
+/Users/linversion/Documents/android-project/LearningVideo-master/app/src/main/cpp/media/synthesizer/../render/video/opengl_render/../../../../opengl/drawer/proxy/drawer_proxy.h:13:18: note: overridden virtual function is here
+    virtual void AddDrawer(Drawer *drawer) = 0;
+                 ^
+1 warning generated.
+[14/15] Building CXX object CMakeFiles/native-lib.dir/media/render/audio/opensl_render.cpp.o
+[15/15] Linking CXX shared library /Users/linversion/Documents/android-project/LearningVideo-master/app/build/intermediates/cxx/Debug/4o163i4f/obj/armeabi-v7a/libnative-lib.so
